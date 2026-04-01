@@ -11,6 +11,8 @@
 	@RestController
 	@RequestMapping("/api/students")
 	public class StudentController {
+		@RestController
+		private @RequestMapping("/api/students")	
 
 	    @Autowired
 	    private StudentService studentService;
